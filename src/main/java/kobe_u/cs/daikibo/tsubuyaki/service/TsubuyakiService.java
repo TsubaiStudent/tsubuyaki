@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import kobe_u.cs.daikibo.tsubuyaki.entity.Tsubuyaki;
 import kobe_u.cs.daikibo.tsubuyaki.repository.TsubuyakiRepository;
 
-@Service  
+@Service
 public class TsubuyakiService {
     @Autowired
     TsubuyakiRepository repo; // レポジトリ
@@ -31,4 +31,4 @@ public class TsubuyakiService {
         found.forEach(list::add);
         return list;
     }
- }
+    }

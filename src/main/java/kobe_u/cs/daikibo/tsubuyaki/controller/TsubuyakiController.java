@@ -1,4 +1,4 @@
-package jp.kobe_u.cs.daikibo.tsubuyaki.controller;
+package kobe_u.cs.daikibo.tsubuyaki.controller;
 
 import java.util.List;
 
@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import kobe_u.cs.daikibo.tsubuyaki.entity.Tsubuyaki;
 import kobe_u.cs.daikibo.tsubuyaki.service.TsubuyakiService;
-
 
 @Controller
 public class TsubuyakiController {
@@ -41,6 +40,4 @@ public class TsubuyakiController {
         ts.postTsubuyaki(t);
         return "redirect:/read"; //メイン画面に転送
     }
-
-  
 }

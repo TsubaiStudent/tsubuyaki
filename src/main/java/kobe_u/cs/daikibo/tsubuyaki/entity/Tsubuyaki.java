@@ -11,10 +11,8 @@ import javax.persistence.TemporalType;
 
 import lombok.Data;
 
-
 @Data
 @Entity
-
 public class Tsubuyaki {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
