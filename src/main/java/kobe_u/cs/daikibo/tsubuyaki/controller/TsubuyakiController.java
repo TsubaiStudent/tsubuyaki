@@ -47,9 +47,6 @@ public class TsubuyakiController {
     String getSearchTsubuyaki(@RequestParam("comment") String comment,Model model) {
         List<Tsubuyaki> list = ts.getSearchTsubuyaki(comment); 
         model.addAttribute("tsubuyakiList", list);   //モデル属性にセット
-        // consoleにlistを表示させたい
-        // デバッグ用：リストをコンソールに表示
-        System.out.println(list); // tsubuyakiオブジェクトのtoString()が必要
 
         return "serch_list"; //リスト画面を返す
     }
